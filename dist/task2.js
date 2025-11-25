@@ -9,23 +9,11 @@ class Stack {
     pop() {
         return this.items.pop();
     }
-    peek() {
-        return this.items[this.items.length - 1];
-    }
     size() {
         return this.items.length;
     }
 }
-function isMatch(char1, char2) {
-    const map = new Map([
-        ['}', '{'],
-        [']', '['],
-        [')', '(']
-    ]);
-    return map.get(char1) === char2;
-}
 function isValid(str) {
-    // const closingBrackets: string[] = [')', '}', ']'];
     const brackets = {
         ']': '[',
         '}': '{',

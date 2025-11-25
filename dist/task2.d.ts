@@ -3,10 +3,8 @@ declare class Stack<T> {
     constructor();
     push(element: T): void;
     pop(): T | undefined;
-    peek(): T | undefined;
     size(): number;
 }
-declare function isMatch(char1: string, char2: string): boolean;
 declare function isValid(str: string): boolean;
 declare const bracketsForm: HTMLFormElement;
 declare const outputElement: HTMLOutputElement;

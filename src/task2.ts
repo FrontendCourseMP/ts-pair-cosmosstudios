@@ -13,23 +13,9 @@ class Stack<T> {
         return this.items.pop();
     }
 
-    peek(): T | undefined {
-        return this.items[this.items.length - 1];
-    }
-
     size(): number {
         return this.items.length;
     }
-}
-
-function isMatch(char1: string, char2: string): boolean {
-    const map = new Map([
-        ['}', '{'],
-        [']', '['],
-        [')', '(']
-    ]);
-
-    return map.get(char1) === char2;
 }
 
 function isValid(str: string): boolean {
